@@ -22,7 +22,7 @@ const App = () => {
     };
 
     let content = (
-        <React.Fragment>
+        <>
             <CharPicker
                 side={side}
                 selectedChar={character}
@@ -38,7 +38,7 @@ const App = () => {
             {side === 'dark' && (
                 <button onClick={destructionHandler}>DESTROY!</button>
             )}
-        </React.Fragment>
+        </>
     );
 
     if (destroyed) {
